@@ -9,9 +9,8 @@ export default function Navitem({ title, param }) {
     <div>
       <Link
         className={`hover:text-amber-600 font-semibold ${
-          genre === param
-            ? "underline underline-offset-8 decoration-4 decoration-amber-600 rounded-lg"
-            : ""
+          genre === param &&
+          "underline underline-offset-8 decoration-4 decoration-amber-600 rounded-lg"
         }`}
         href={`/?genre=${param}`}
       >
